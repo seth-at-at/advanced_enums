@@ -12,4 +12,8 @@ class VendingMachine
   def how_many_snacks
     @inventory.count
   end
+
+  def snacks_by_name
+    @inventory.sort_by {|snack| snack}
+  end
 end
